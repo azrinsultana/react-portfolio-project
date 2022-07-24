@@ -1,0 +1,53 @@
+.m-wrapper{
+    display:flex;
+    height:10vh;
+    margin-top:20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.m-left{
+    display:flex;
+    align-items: center;
+    flex:1;
+    gap:2rem;
+    font-size: 40px;
+    
+
+}
+.m-name{
+    font-family: cursive;
+   
+    font-weight: bold;
+}
+
+.m-right{
+    display:flex;
+    flex:2;
+    justify-content: center;
+    font-weight: 400;
+  
+}
+.m-list{
+    display:flex;
+    
+    text-decoration:none;
+    
+
+    
+}
+.m-list ul{
+    display: flex;
+    gap:3rem;
+    flex:1;
+    text-decoration: none;
+    margin-right: 3rem;
+}
+.m-list ul li:hover{
+    color:var(--blue);
+    cursor: pointer;
+}
+.m-button{
+   margin: 10px;
+}
