@@ -6,7 +6,38 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    
+    flex: 1;
+    padding: 2rem;
+}
+
+.h-left .h-intro{
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--black);
+    line-height: 0.5;
+}
+
+.h-left .h-name{
+    font-family: "Poppins", "sans-serif";
+line-height: 0.5;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--blue);
+}
+.h-left .h-description{
+    line-height: 1;
+    color: var(--black);
+    font-size: 20px;
+}
+.h-button{
+    margin-top: 50px;
+    width:8rem;
+}
+.h-right{
+    flex: 1;
 }
 
