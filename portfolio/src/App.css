@@ -1,8 +1,9 @@
+
 :root
 {
   --yellow: #F5C32C;
     --orange : #FCA61F;
-    --blue:#3a0a88;
+    --blue:#372978;
     --black : #242D49;
     --gray : #788097;
     --blueCard : #DDF8FE;
@@ -19,11 +20,17 @@
     color: white;
     font-size: 20px;
     padding: 11px 26px 11px 26px;
+    position:relative;
   }
   .button:hover{
     background: white;
     color: var(--blue);
     cursor: pointer;
     border: 2px solid var(--blue);
+   transform-origin: center;
+   transition: transform 250ms ease-out;
   }
-  
+
+body{
+  height: 100%;
+}

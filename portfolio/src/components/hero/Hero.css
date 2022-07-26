@@ -1,11 +1,14 @@
 .hero{
     display: flex;
    height: 50vh;
+   justify-content: center;
+   margin-top: 3rem;
 }
 .h-left{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 4rem;
     
     flex: 1;
     padding: 2rem;
@@ -41,3 +44,21 @@ line-height: 0.5;
     flex: 1;
 }
 
+.h-icon{
+    display: flex;
+    gap:1rem;
+    margin-top: 10%;
+}
+.h-icon>*{
+    cursor: pointer;
+}
+
+.h-right>:nth-child(1){
+    transform: scale(.7);
+    top:-15%;
+
+}
+.h-right>:nth-child(2){
+    transform: scale(.7);
+    
+}

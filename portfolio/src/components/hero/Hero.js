@@ -1,10 +1,8 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee} from '@fortawesome/free-solid-svg-icons'
-
-import 'font-awesome/css/font-awesome.min.css';
-
 import './Hero.css'
+import { FaGithub, FaLinkedin,FaTwitterSquare } from 'react-icons/fa';
+
+import Website from '../../image/website.png';
 
 function Hero() {
   return (
@@ -21,16 +19,19 @@ function Hero() {
             <button className='button h-button'>
                 Hire me
             </button>
-            <h1><i className="fa-brands fa-github"></i></h1>
-            <i className="fa-brands fa-github-square"></i>
-
-            
-
+            <div className='h-icon'>
+            <FaLinkedin color='rgb(55,41,120)' size='3rem'/>
+            <FaGithub color='rgb(55,41,120)' size='3rem'/>
+            <FaTwitterSquare color='rgb(55,41,120)' size='3rem'/>
+            </div>
            
-
         </div>
         <div className='h-right'>
-            Web developer
+
+      
+        <img src={Website} alt="hero image" className='h-image1'/>
+
+
         </div>
 
     </div>
