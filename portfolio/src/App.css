@@ -7,12 +7,12 @@
     --black : #0d121f;
     --gray : #788097;
     --blueCard : #DDF8FE;
-    --purple: rgb(238 210 255);
+    --purple: rgb(240, 201, 250);
     --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
     --orangeCard: rgba(252, 166, 31, 0.45);
     --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
-.button {
+.p-button {
     background: linear-gradient(180deg, #320a72 26.71%, #6212e4 99.36%);
     box-shadow: 0px 20px 24px 3px rgba(18,39, 228, 0.42);
     border-radius: 34px;

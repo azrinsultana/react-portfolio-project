@@ -8,15 +8,17 @@ function Hero() {
   return (
     <div className='hero'>
         <div className='h-left'>
-            <h1 style={{fontWeight:'50px'}} className='h-intro'>
+            <div className='name'>
+            <span style={{fontWeight:'50px'}} className='h-intro'>
                 Hi! I'm 
-            </h1>
-            <h1 className='h-name'>
+            </span>
+            <span className='h-name'>
             Azrin Sultana
 
-            </h1>
+            </span>
             <span className='h-description'>React js front end developer, with 3 years exprience in building quality website</span>
-            <button className='button h-button'>
+            </div>
+            <button className='p-button h-button'>
                 Hire me
             </button>
             <div className='h-icon'>
@@ -24,7 +26,7 @@ function Hero() {
             <FaGithub color='rgb(55,41,120)' size='3rem'/>
             <FaTwitterSquare color='rgb(55,41,120)' size='3rem'/>
             </div>
-           
+            
         </div>
         <div className='h-right'>
 

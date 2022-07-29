@@ -1,41 +1,45 @@
 import React from 'react'
-import './Services.css'
-import Card from '../card/Card'
+import {Button, Alert,Container, Row,Col} from 'react-bootstrap';
 import DesignIcon from '../../image/web-design.png'
+import './Services.css'
+import Scard from '../card/Card'
 
 function Services() {
   return (
-    <div>
-    <div className='service'>
-        <div className='s-left'>
-            <span className='s-text'>
+    <Container fluid>
+        <Row>
+            <Col md={5} sm={8}>
+                <div className='s-details'>
+            <span>
                 My Awesome
             </span>
-            <span className='s-name'>
+            <span>
                 Services
 
             </span>
-            <span className='s-description'>
+            <span>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             </span>
-            <button className='button s-button'>Download CV
+            <button className='p-button s-button'>Download CV
             </button>
-            <div className='blur' style={{background:'#ABF1FF9'}}></div>
+            <div className='blur' style={{background:'var(--blueCard'}}></div>
 
-        </div>
-        <div className='s-right'>
+            </div>
+            </Col>
             
-        <Card icon={DesignIcon} heading={'design'} details={"Custom website design according to the choice"}> </Card>
-        <Card icon={DesignIcon} heading={'design'} details={"Custom website design according to the choice"}> </Card>
-            <Card icon={DesignIcon} heading={'design'} details={"Custom website design according to the choice"}> </Card>
-            
-        </div>
-       
-    </div>
+            <Col md={7} sm={8} className='s-card'>
+              
+            <Scard icon={DesignIcon} heading={'design'} details={"Custom website design according to the choice"}> </Scard>
+            <Scard icon={DesignIcon} heading={'design'} details={"Custom website design according to the choice"}> </Scard>
+            <Scard icon={DesignIcon} heading={'design'} details={"Custom website design according to the choice"}> </Scard>
 
-    
-    </div>
-    
+            <div className='blur s-blur' style={{background:"var(--purple)"}}></div>
+
+            </Col>
+            
+            
+        </Row>
+    </Container>
   )
 }
 

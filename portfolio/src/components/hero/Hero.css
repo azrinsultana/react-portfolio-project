@@ -2,40 +2,40 @@
     display: flex;
    height: auto;
    justify-content: center;
-   margin-top: 3rem;
+  
 }
 .h-left{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+gap:1rem;
     
     flex: 1;
     padding: 4rem;
 }
-
-.h-left .h-intro{
-    font-family: cursive;
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
+.name{
+    display: flex;
+    flex-direction: column;
+    gap:0.25rem;
+}
+ .h-intro{
+    
     font-size: 50px;
+    font-family: cursive;
+    font-weight: bold;
     color: var(--black);
-    line-height: 0.5;
  
 }
 
-.h-left .h-name{
-    font-family: "Poppins", "sans-serif";
-line-height: 0.5;
-    font-weight: bold;
+.h-name{
     font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
     color: var(--blue);
 }
-.h-left .h-description{
-    line-height: 1;
-    color: var(--black);
-    font-size: 20px;
+ .h-description{
+    
+   font-size: 20px;
 }
 .h-button{
     margin-top: 50px;
@@ -43,12 +43,15 @@ line-height: 0.5;
 }
 .h-right{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .h-icon{
     display: flex;
     gap:1rem;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 .h-icon>*{
     cursor: pointer;

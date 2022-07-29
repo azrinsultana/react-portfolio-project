@@ -1,59 +1,53 @@
-.service{
-    display: flex;
-    margin-top: 4rem;
-    padding: 3rem;
-   
-}
-.s-left{
+.s-details{
     display: flex;
     flex-direction: column;
-    flex: 1;
-  
+    padding: 4rem;
+
+    
+    
 }
-.s-text{
+.s-details>:nth-child(1){
     font-size: 50px;
-    color: var(--black);
-    font-weight: bold;
     font-family: cursive;
-}
-.s-name{
-    font-family: "Poppins", "sans-serif";
-   
-        font-weight: bold;
-        font-size: 60px;
-        color: var(--blue);
-        left:2%;
-}
-.s-description{
+    font-weight: bold;
     color: var(--black);
+ 
+}
+.s-details>:nth-child(2){
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: var(--blue);
+}
+.s-details>:nth-child(3){
     font-size: 20px;
-    padding-top: 7px;
 }
 .s-button{
     margin-top: 50px;
     width:12rem;
 }
-.blur {
+.s-card{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+position: relative;
+flex:1;
+
+}
+.s-card>*{
     position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: #edd0ff;
-    filter: blur(212px);
-    z-index: -9;
-    
+    margin: 10px;
    
-    filter: blur(72px);
-  }
-
-.s-right{
-  
-   flex: 1;
-  
-
 }
-.s-right>*{
-
-   margin: 2px;
+.s-card>:nth-child(1){
+    left: 20%;
 }
-
+.s-card>:nth-child(2){
+   right: 18%; 
+   top:-10%;
+}
+.s-card>:nth-child(3){
+    left: 50%; 
+    top:50%;
+}
